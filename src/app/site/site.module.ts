@@ -6,12 +6,14 @@ import { SiteComponent } from './site.component';
 import { siteRoutes } from './site.routes';
 import { RegistrationComponent } from './registration/registration.component';
 import { UserModule } from '../user/user.module';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [HomeComponent, SiteComponent, RegistrationComponent],
   imports: [
     CommonModule,
     RouterModule.forRoot(siteRoutes),
+    MDBBootstrapModule.forRoot(),
     UserModule
   ]
 })
