@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { appRoutes} from './routes';
+import { UserModule } from './user/user.module';
+import { SiteModule } from './site/site.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +20,9 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
     FormsModule,
+    RouterModule.forRoot(appRoutes),
+    UserModule,
+    SiteModule
   ],
   providers: [],
   bootstrap: [AppComponent],
