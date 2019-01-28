@@ -7,13 +7,15 @@ import { RouterModule } from '@angular/router';
 import { NavComponent } from './nav/nav.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     UserComponent,
     HomeComponent,
     NavComponent,
-    SidenavComponent
+    SidenavComponent,
+    DashboardComponent
   ],
   imports: [
     CommonModule,

@@ -1,2 +1,10 @@
-<user-nav></user-nav>
-<user-sidenav></user-sidenav>
+<div class="d-flex flex-wrap">
+  <user-nav class="w-100"></user-nav>
+  <div class="w-100">
+    <user-sidenav></user-sidenav>
+  <section class='right-container'>
+    <router-outlet name="content"></router-outlet>
+  </section>
+  </div>
+  
+</div>
