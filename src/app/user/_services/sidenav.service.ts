@@ -11,7 +11,8 @@ export class SidenavService {
       title: 'Dashboard',
       icon: 'fa fa-tachometer-alt',
       active: false,
-      type: 'dropdown',
+      type: '',
+      value:'',
       submenus: []
     },
 	 {
@@ -19,15 +20,19 @@ export class SidenavService {
       icon: 'fa fa-tachometer-alt',
       active: false,
       type: 'dropdown',
+      value:'profile',
       submenus: [
         {
-          title: 'View Profile'
+          title: 'View Profile',
+          value:'viewprofile'
         },
         {
-          title: 'Add Bank Details'
+          title: 'Add Bank Details',
+          value:'addbankdetails'
         },
         {
-          title: 'Change Password'
+          title: 'Change Password',
+          value:'changepassword'
         }
       ]
     },
@@ -36,12 +41,15 @@ export class SidenavService {
       icon: 'fa fa-tachometer-alt',
       active: false,
       type: 'dropdown',
+      value:'myteam',
       submenus: [
         {
-          title: 'Direct Team'
+          title: 'Direct Team',
+          value:'directteam'
         },
         {
-          title: 'Downline Team'
+          title: 'Downline Team',
+          value:'downlineteam',
         }
       ]
     },
@@ -50,12 +58,15 @@ export class SidenavService {
       icon: 'fa fa-tachometer-alt',
       active: false,
       type: 'dropdown',
+      value:'providehelp',
       submenus: [
         {
-          title: 'Provide Help'
+          title: 'Provide Help',
+          value:'providehelp'
         },
         {
-          title: 'Provide Help History'
+          title: 'Provide Help History',
+          value:'providehelphistory',
         }
       ]
     },
@@ -64,12 +75,15 @@ export class SidenavService {
       icon: 'fa fa-tachometer-alt',
       active: false,
       type: 'dropdown',
+      value:'gethelp',
       submenus: [
         {
-          title: 'Get Help'
+          title: 'Get Help',
+          value:'gethelp'
         },
         {
-          title: 'Get Help History'
+          title: 'Get Help History',
+          value:'gethelphistory'
         }
       ]
     },
@@ -78,12 +92,15 @@ export class SidenavService {
       icon: 'fa fa-tachometer-alt',
       active: false,
       type: 'dropdown',
+      value:'levelincome',
       submenus: [
         {
-          title: 'Withdrawal'
+          title: 'Withdrawal',
+          value:'withdrawal'
         },
         {
-          title: 'Withdrawal History'
+          title: 'Withdrawal History',
+          value:'withdrawalhistory'
         }
       ]
     },
@@ -92,12 +109,15 @@ export class SidenavService {
       icon: 'fa fa-tachometer-alt',
       active: false,
       type: 'dropdown',
+      value:'incomereport',
       submenus: [
         {
-          title: 'Growth Income'
+          title: 'Growth Income',
+          value:'growthincome'
         },
         {
-          title: 'Level Income'
+          title: 'Level Income',
+          value:'levelincome'
         }
       ]
     },
@@ -106,15 +126,19 @@ export class SidenavService {
       icon: 'fa fa-tachometer-alt',
       active: false,
       type: 'dropdown',
+      value:'support',
       submenus: [
         {
-          title: 'Generate Ticket'
+          title: 'Generate Ticket',
+          value:'generateticket'
         },
         {
-          title: 'Send Ticket'
+          title: 'Send Ticket',
+          value:'sendticket'
         },
         {
-          title: 'Receive Ticket'
+          title: 'Receive Ticket',
+          value:'receiveticket'
         }
       ]
     },
@@ -122,7 +146,8 @@ export class SidenavService {
       title: 'Logout',
       icon: 'fa fa-tachometer-alt',
       active: false,
-      type: 'dropdown',
+      type: '',
+      value:'logout',
       submenus: []
     }
   ];

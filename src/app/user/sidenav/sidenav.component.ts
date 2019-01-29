@@ -27,7 +27,15 @@ export class SidenavComponent implements OnInit {
   getSideBarState() {
     return this.sidenavservice.getSidebarState();
   }
-
+  getRouteLink(menuData, isMenu){
+    if(isMenu) {
+      if(menuData.submenus && menuData.submenus.length === 0){
+        return "/user/" + menuData.value;
+      }
+    }else{
+      return "/user/" + menuData.value;
+    }
+  }
   toggle(currentMenu) {
     if (currentMenu.type === 'dropdown') {
       this.menus.forEach(element => {
