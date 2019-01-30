@@ -23,6 +23,7 @@ import { LevelincomeComponent } from './incomereport/levelincome/levelincome.com
 import { GenerateticketComponent } from './support/generateticket/generateticket.component';
 import { SendticketComponent } from './support/sendticket/sendticket.component';
 import { ReceiveticketComponent } from './support/receiveticket/receiveticket.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { ReceiveticketComponent } from './support/receiveticket/receiveticket.co
     LevelincomeComponent,
     GenerateticketComponent,
     SendticketComponent,
-    ReceiveticketComponent
+    ReceiveticketComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,
