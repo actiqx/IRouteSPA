@@ -1,0 +1,9 @@
+.cascading-admin-card .admin-up .fa {
+  padding: 1.7rem;
+  font-size: 2rem;
+  color: #fff;
+  text-align: left;
+  margin-right: 1rem;
+  border-radius: 3px;
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, .2), 0 2px 13px 0 rgba(0, 0, 0, .19);
+}

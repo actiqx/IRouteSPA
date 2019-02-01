@@ -7,12 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./registration.component.scss']
 })
 export class RegistrationComponent implements OnInit {
+  constructor(private router: Router) {}
 
-  constructor(private router:Router) { }
-
-  ngOnInit() {
-  }
+  ngOnInit() {}
   OnRegister() {
-    this.router.navigate(['user/home']);
+    this.router.navigate(['user']);
   }
 }

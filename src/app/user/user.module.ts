@@ -24,6 +24,8 @@ import { GenerateticketComponent } from './support/generateticket/generateticket
 import { SendticketComponent } from './support/sendticket/sendticket.component';
 import { ReceiveticketComponent } from './support/receiveticket/receiveticket.component';
 import { CardComponent } from './card/card.component';
+import { DtilesComponent } from './dashboard/dtiles/dtiles.component';
+import { SidenavService } from './_services/sidenav.service';
 
 @NgModule({
   declarations: [
@@ -47,12 +49,14 @@ import { CardComponent } from './card/card.component';
     GenerateticketComponent,
     SendticketComponent,
     ReceiveticketComponent,
-    CardComponent
+    CardComponent,
+    DtilesComponent
   ],
   imports: [
     CommonModule,
     RouterModule.forRoot(userRoutes),
-    MDBBootstrapModule.forRoot(),
-  ]
+    MDBBootstrapModule.forRoot()
+  ],
+  providers: [SidenavService]
 })
-export class UserModule { }
+export class UserModule {}
